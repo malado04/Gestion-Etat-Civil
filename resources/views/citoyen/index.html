@@ -1,0 +1,190 @@
+<style type="text/css">
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.td {
+  border: 1px solid black;
+  border-collapse: none !important;
+}
+.txt-left{
+    text-align: left;
+}
+.txt-center{
+    text-align: center;
+}
+.txt-right{
+    text-align: right;
+}
+.m-t-0{
+    margin-top: 0%;
+}
+.m-t-5{
+    margin-top: 0%;
+}
+.m-t-10{
+    margin-top: 0%;
+}
+.m-t-45{
+    margin-top: 0%;
+}
+
+.m-l-0{
+    margin-top: 0%;
+}
+.m-l-5{
+    margin-top: 0%;
+}
+.m-l-10{
+    margin-top: 0%;
+}
+.m-l-45{
+    margin-top: 0%;
+}
+
+.w-50{
+    width: 50%;
+}
+.w-75{
+    width: 50%;
+}
+.w-100{
+    width: 50%;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+.p-1{
+    padding: 1%;
+}
+.p-2{
+    padding: 2%;
+}
+
+.txt-white{
+    color: white;
+    height: 200px;
+}
+
+
+.rotateimg180 {
+  -webkit-transform:rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+</style>
+<table >
+        <tr>
+           <!--  <td colspan="1" style="text-align: center; ">s
+            </td> -->
+            <td colspan="4" style="text-align: center; width: 50%;" class="td">
+                <label><b>REGION: LOUGA</b></label><br><br>
+                <label><b>DEPARTEMENT: LOUGA</b></label><br><br>
+                <label><b>COMMUNE: LOUGA</b></label><br><br>
+            </td>
+            <td colspan="4" style="text-align: center; width: 50%;"><br>
+                <label><b>REPUBLIQUE DU SENEGAL</b></label><br>
+                <label>Un Peuple - Un But - Une Foi</label><br>
+                <label><b><h1>ETAT-CIVIL</h1></b></label>
+                <label><b>CENTRE PRINCIPAL (1)</b></label><br>
+                <label><b>LOUGA CENTRE PRINCIPAL</b></label><br><br><br>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="5" style="width: 90%;">
+                <label class="txt-center m-t-0"><b><h2>EXTRAIT DU REGISTRE DES ACTES DE NAISSANCE</h2></b></label>
+                <label class="txt-left">Pour l'année {#{année de naissance}}</label><br>
+                <label class="txt-left">NUNMERO {#{duméro de registre en letre}}</label><br>
+            </td>
+            <td colspan="3" style="text-align: left; width: 10%;">
+                <label><h4 class="txt-center">AN {#{duméro de registre en chiffre}}</h4></label>
+                <!-- <h2 class="txt-center">AN {#{duméro de registre en chiffre}}</h2> -->
+                <!-- <p class="txt-left">N° dans le registre des chifres</p><br> -->
+ 
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td colspan="8">
+                <div class="w-50 f-left">
+                    <h3>l'an {#{ l'année de naissance et le mois}}</h3>
+                   <h1 style="" class="w-75"> <label class="" style="background-color:yelloaw;"><label style="text-size:5px;">Est né(e) à LOUGA</label></h1>
+                    <label class="m-l-5">Lieu de naissance</label>
+                    Un enfant de sexe {#{féminin}}
+
+                    <h1>{{$citoyen->prenom}}</h1>
+                    <i>PRENOM(s)</i>
+                    DE {#{optional($citoyen->citoyen_h)->prenom}}
+                    <i>PRENOM(s) DU PERE</i>
+
+                    ET DE {#{optional($citoyen->citoyen_h)->prenom}}
+                    <i>PRENOM(s) DE LA MERE</i>
+
+                    <label>Le pays de naissance pour les naissances à l'étranger (3)</label>
+                </div>
+                <div class="w-50 f-left" style=""><br><br><br>
+                à   <br>HEURE DE NAISSANCE
+                    <h1>{#{$citoyen->nom}}</h1>
+                    <i>NOM DE FAMILLE</i>
+
+                    DE {#{optional($citoyen->citoyen_f)->prenom}}
+                    <i>NOM DE FAMILLE DE LA MERE</i>
+                    DE {#{optional($citoyen->citoyen_f)->prenom}}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" class="rotateimg180 txt-center">
+                Jugement d'autorisation <br>
+                d'inscription <br>
+                (ex supplétif)
+            </td>
+            <td colspan="6" class="txt-white"> 
+              
+                Jugement d'autorisation 
+                d'inscription 
+                (ex supplétif)
+                Jugement d'autorisation 
+                d'inscription >
+                (ex supplétif)
+                Jugement d'autorisation
+                d'inscription 
+                (ex supplétif)
+            </td>
+            <td colspan="1" class="txt-white">
+                Jugement d'autorisation <br>
+                d'inscription <br>
+                (ex supplétif)
+                
+            </td>
+        </tr>
+        <tr>
+            <td colspan="8">
+                <h3>MENTIONS MARGINALES</h3>
+                 <div class="w-50 f-left txt-left">
+                   EXTRAIT DELIVRE PAR LE CENTRE P¨RINCIPAL <br>
+                   LOUGA CENTRE PRINCIPAL 
+                   <br>
+                   <label>RESERVER |||||||||||||||||||||||||||||||||||</label>
+                </div>
+                <div class="w-50 f-left txt-center" style="">
+                    POUR EXTRAIT CERTIFIE CONFORME <br>
+                    Fait à LOUGA le {#{ Date du jour en letre}} <br>
+                    L'officier de l'Etat-Civil soussigné
+                
+                </div>
+            </td>
+        </tr>
+    </table>
+
