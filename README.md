@@ -205,10 +205,9 @@ Ce projet met notamment en évidence des compétences en :
 Ingénieur Logiciel | Développeur Full Stack | Architecture Logicielle
 
 * GitHub : [@malado04](https://github.com/malado04)
+* WhatApp +221 77 560 42 72 / +221 76 618 15 75
 
 ## 📄 Licence
 
-Projet développé dans un cadre professionnel et/ou pédagogique.
-
-WhatApp +221 77 560 42 72 / +221 76 618 15 75
+Projet développé dans un cadre professionnel.
 
